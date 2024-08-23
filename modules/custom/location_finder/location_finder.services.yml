@@ -1,0 +1,4 @@
+services:
+  location_finder.service:
+    class: 'Drupal\location_finder\Service\LocationService'
+    arguments: ['@http_client', '@config.factory']

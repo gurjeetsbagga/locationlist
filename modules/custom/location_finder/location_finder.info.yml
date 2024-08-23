@@ -1,0 +1,5 @@
+name: Location Finder
+type: module
+description: First custom drupal 9 module
+package: custom
+core_version_requirement: ^9 || ^10

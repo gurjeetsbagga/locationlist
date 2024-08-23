@@ -1,0 +1,15 @@
+location_finder.finder:
+  path: '/location-finder/locations'
+  defaults:
+    _controller: '\Drupal\location_finder\Controller\LocationController::getLocationList'
+    _title: 'Location Finder'
+  requirements:
+    _permission: 'access content'
+
+location_finder.location:
+  path: '/location-finder'
+  defaults:
+    _title: 'Location'
+    _form: 'Drupal\location_finder\Form\LocationForm'
+  requirements:
+    _permission: 'access content'
